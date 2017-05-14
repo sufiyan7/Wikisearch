@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wikimedia Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+
+
+    <!-- Mobile Hamburger Side Menu -->
+    <div class="mobile-menu">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="select-content">
+          <!-- <form class="input" action="index.html" method="post"> -->
+            <div class="input">
+              <input class="searchTerm" name="search" placeholder="Search..">
+              <br>
+              <select class="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ur">اردو</option>
+                <option value="ar">العربية</option>
+                <option value="ja">日本語</option>
+                <option value="it">Italiano</option>
+                <option value="he">עברית</option>
+              </select>
+              <br>
+              <button type="button" class='fetch'>Fetch</button>
+            </div>
+
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="wrapper">
+      <div class="head">
+        <h1>Wikipedia</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="select-content">
+          <div class="input">
+            <input class="searchTerm" name="search" placeholder="Search..">
+            <br>
+            <select class="language">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+              <option value="hi">हिन्दी</option>
+              <option value="ur">اردو</option>
+              <option value="ar">العربية</option>
+              <option value="ja">日本語</option>
+              <option value="it">Italiano</option>
+              <option value="he">עברית</option>
+            </select>
+            <br>
+            <button type="button" class="fetch">Fetch</button>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="display">
+          <p>
+            Wikipedia is a free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="script.js"></script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+  </body>
+</html>
