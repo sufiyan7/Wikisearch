@@ -2,22 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sufiyan Siddique">
+
     <title>Wikimedia Project</title>
 
+    <!-- Custome css style -->
     <link rel="stylesheet" href="style.css">
-
-
+    
   </head>
   <body>
 
 
     <!-- Mobile Hamburger Side Menu -->
     <div class="mobile-menu">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span onclick="openNav()">&#9776;</span>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="select-content">
-          <!-- <form class="input" action="index.html" method="post"> -->
             <div class="input">
               <input class="searchTerm" name="search" placeholder="Search..">
               <br>
@@ -36,8 +39,6 @@
               <br>
               <button type="button" class='fetch'>Fetch</button>
             </div>
-
-          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -93,21 +94,9 @@
 
     <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
+    <!-- Custome JS -->
 <script src="script.js"></script>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 
   </body>
 </html>

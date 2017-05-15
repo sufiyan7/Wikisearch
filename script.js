@@ -1,5 +1,15 @@
-$(document).ready(function(){
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+
+$(document).ready(function(){
  // click ajax call
      $(".fetch").on("click", function() {
      	var searchterm = $(this).siblings(".searchTerm").val();
@@ -30,8 +40,11 @@ $(document).ready(function(){
 
             // remove cite error
             blurb.find('.mw-ext-cite-error').remove();
+
             $('.display').html($(blurb).find('p'));
-          }else{
+          }
+          else
+          {
             var err = "ERROR 404";
             var err2 = "Page not found"
             $('.display').html("<h1>"+err+"</h1><h3>"+err2+"</h3>");

@@ -23,8 +23,12 @@ body {
   border: 1px solid #000;
 }
 
-.input > #fetch{
+.input > .fetch{
   border-radius: 7px;
+}
+
+.input > .fetch:hover{
+  background-color: #5f9ea0;
 }
 
 
@@ -40,16 +44,6 @@ body {
       border-bottom: 2px solid #000;
       margin-bottom: 16px;
 }
-
-
-
-
-
-/*--------------------------------------------------------------------------------*/
-
-
-
-
 
 
 .sidenav {
@@ -89,6 +83,11 @@ body {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+}
+
+.mobile-menu span{
+  font-size:30px;
+  cursor:pointer;
 }
 
 @media screen and (max-height: 450px) {
